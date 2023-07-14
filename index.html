@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website</title>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <script>
+        $(document).ready(function() {
+            $("a.contact-link").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#contactinfo").offset().top
+                }, 1);
+            });
+
+            $("a#aboutlink").click(function() {
+                $('html, body').animate({
+                    scrollTop: $(".about-us-wrapper").offset().top
+                }, 1);
+            });
+        });
+    </script>
+
+</head>
+</html>
+<body>
+    <header>
+        <nav>
+            <div class=navbar-wrapper>
+                <div class="logo-container">
+                    <h1 class="logo-text"><span style="color:rgb(0, 187, 255); text-decoration: underline; font-size: 25px;" >D</span> <span style="color:rgb(255, 255, 255);">K</span></h1>
+                </div>
+                <div class="directory-container">
+                    <ul>
+                        <li class="nav-link-container"><a href=# class = nav-links>Home</a></li>
+                        <li class="nav-link-container" id ="prodlinkcontainer">
+                            <a href=# class = nav-links>Projects</a>
+                            <ul class = "prod-drop" id = "proddrop">
+                                <li>
+                                    <a class = "product-cell", id = "p0" href="#">
+                                        <img class="prod-img" src="./images/productdat/thumbnails/p0.png"></img>
+                                        <div class="prod-text">Sample Product</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class = "product-cell", id = "p0" href="#">
+                                        <img class="prod-img" src="./images/productdat/thumbnails/p0.png"></img>
+                                        <div class="prod-text">Sample Product</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class = "product-cell", id = "p0" href="#">
+                                        <img class="prod-img" src="./images/productdat/thumbnails/p0.png"></img>
+                                        <div class="prod-text">Sample Product</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        
+                        </li>
+                        <li class="nav-link-container"><a href=# class = nav-links id="aboutlink">About</a></li>
+                    </ul>
+                </div>
+                <div class ="right-container">
+                    <a href="#" class="contact-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="banner-container">
+        <img class="banner-img" src="./images/banner/banner.jpg"></img>
+        <div class="banner-text">
+            <h1 class ="banner-header">Welcome to Devised Tech</h1>
+            <p class ="banner-info">
+                loerm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            </p>
+        </div>  
+    </div>
+
+    <div class="about-us-wrapper">
+        <div class="about-us-container">
+            <div class="about-us-text">
+                <h1 class="info-header">About us</h1>
+                <p class="about-us-info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                </p>
+            </div>
+        </div>
+        <div class="info-container" id="contactinfo">
+            <div class="contact-info-text">
+                <h1 class="info-header">Contact</h1>
+                <p class="contact-info-info"></p>
+                <img class="personal-image" id="dave" src="https://avatars.githubusercontent.com/u/90827405?v=4"></img><br>
+                <div class="contact-info-text">
+                    Name: Dave Kaushik <br>
+                    Email: <a href="mailto: dkaushik2105@gmail.com">dkaushik2105@gmail.com</a><br>
+                    Phone: 587-778-0440 <br>
+                </div>
+                <a href="https://github.com/nDevised/Resume/blob/main/Resume.pdf" class="resume-link" id="fillbutton">Resume</a>
+            </div>
+        </div>
+    </div>
+</body>

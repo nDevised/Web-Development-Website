@@ -214,7 +214,7 @@ li{
 
 .info-container{
   margin: 0 auto;
-  text-align: center;
+  max-width: 50vw;
 }
 
 /* fillable button */
@@ -258,9 +258,8 @@ li{
   text-align: center;
 }
 
-.about-us-text{
+.info-text{
   color:white;
   font: 25px 'Ubuntu', sans-serif;
   padding: 10px 20px 50px 20px;
-  text-align: center;
 }

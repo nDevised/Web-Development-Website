@@ -9,13 +9,13 @@
         $(document).ready(function() {
             $("a.contact-link").click(function() {
                 $('html, body').animate({
-                    scrollTop: $("#contactinfo").offset().top
+                    scrollTop: $(".contact-us-container").offset().top
                 }, 1);
             });
 
             $("a#aboutlink").click(function() {
                 $('html, body').animate({
-                    scrollTop: $(".about-us-wrapper").offset().top
+                    scrollTop: $("#aboutinfo").offset().top
                 }, 1);
             });
         });
@@ -72,32 +72,24 @@
         <div class="banner-text">
             <h1 class ="banner-header">Welcome to Devised Tech</h1>
             <p class ="banner-info">
-                loerm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                A client based web-devlopment companty. We provide a wide range of services from web development to web hosting. We also provide services for web security and web optimization.
             </p>
         </div>  
     </div>
 
-    <div class="about-us-wrapper">
-        <div class="about-us-container">
-            <div class="about-us-text">
-                <h1 class="info-header">About us</h1>
-                <p class="about-us-info">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                </p>
-            </div>
+    <div class="info-container" id="aboutinfo">
+        <div class="info-text" id="aboutinfotxt">
+            <h1 class="info-header">About Us</h1>
+            <p class="about-us-info">Welcome to our space! We are a dynamic team of passionate web developers, equipped with a blend of creativity and technical expertise to translate your vision into a digital reality. At our core, we firmly believe in delivering top-tier, innovative solutions that empower businesses to soar to new heights. Since our inception, we've been dedicated to pushing the boundaries of design and development, leveraging the latest technologies to create exceptional, user-friendly websites. Our commitment to excellence and integrity has allowed us to work with a diverse range of clients, providing personalized strategies that resonate with their unique goals. Partner with us, and let's forge the digital future together.</p>
         </div>
+    </div>
+    <div class="contact-us-container">
         <div class="info-container" id="contactinfo">
-            <div class="contact-info-text">
-                <h1 class="info-header">Contact</h1>
-                <p class="contact-info-info"></p>
-                <img class="personal-image" id="dave" src="https://avatars.githubusercontent.com/u/90827405?v=4"></img><br>
-                <div class="contact-info-text">
-                    Name: Dave Kaushik <br>
-                    Email: <a href="mailto: dkaushik2105@gmail.com">dkaushik2105@gmail.com</a><br>
-                    Phone: 587-778-0440 <br>
-                </div>
-                <a href="https://github.com/nDevised/Resume/blob/main/Resume.pdf" class="resume-link" id="fillbutton">Resume</a>
+            <div class="info-text" id="contactinfotxt">
+                <h1 class="info-header">Contact Us</h1>
+                <p class="contact-info-info">Contact us for web development inquiries. Please specify what you expect in your website.</p>
             </div>
         </div>
     </div>
+
 </body>
